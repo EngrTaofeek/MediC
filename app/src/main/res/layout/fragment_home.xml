@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    tools:context=".HomeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lay"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/lagim"
+            android:src="@drawable/lagim"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="10dp"
+            android:layout_marginTop="24dp"
+            android:gravity="end"
+            android:textColor="@color/common_google_signin_btn_text_dark"
+            android:id="@+id/grea"
+            android:layout_below="@id/circle"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:text="The hard days are what makes us stronger"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:id="@+id/circle"
+            android:layout_marginTop="10dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/imag"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:id="@+id/circle1"
+            android:layout_margin="5dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ind"/>
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/calL"
+        android:layout_below="@id/lay"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:contentPadding="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/common_google_signin_btn_text_dark_default">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/cor"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="CORONA VIRUS"/>
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/pic"
+                android:layout_below="@id/cor"
+                android:src="@drawable/ambu"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/pic"
+                android:id="@+id/well"
+                android:layout_height="wrap_content"
+                android:text="If you feel unwell or develop covid-19 symptoms, immediately contact NCDC using the call lines below\nNote: call line 3 is for countries other than Nigeria"/>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/calL"
+        android:layout_above="@id/tt"
+        android:layout_height="40sp"
+        android:background="@color/colorAccent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/seen">
+
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imagecall"
+                android:layout_height="100dp"
+                android:background="@color/transparentwhite"
+                android:src="@drawable/ic_call"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:id="@+id/edit_text"
+                android:text="080097000010"
+                android:inputType="phone"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/seen1">
+
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imagecal2"
+                android:background="@color/transparentwhite"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_call"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:id="@+id/edit_text1"
+                android:text="080097000010"
+                android:inputType="phone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/seen2">
+
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imagecal3"
+                android:background="@color/transparentwhite"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_call"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:id="@+id/edit_text2"
+                android:text="911"
+                android:inputType="phone"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tt">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/Contact1"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@id/calL"
+            android:text="Call Line 1"
+            android:inputType="phone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/Contact2"
+            android:layout_below="@id/calL"
+            android:text="Call Line 2"
+            android:inputType="phone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/Contact3"
+            android:layout_below="@id/calL"
+            android:text="Call Line 3"
+            android:inputType="phone"/>
+    </LinearLayout>
+</RelativeLayout>
